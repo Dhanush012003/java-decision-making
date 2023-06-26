@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		//get input
+		Scanner sc=new Scanner(System.in);
+		String a=sc.nextLine();
+		if(a.equals("BLUE")){
+		    System.out.println("It is Dawn");
+		}
+		else if(a.equals("RED")){
+		    System.out.println("It is Dusk");
+		}
+		else{
+		    System.out.println("Invalid Input");
+		}
+	}
+}
