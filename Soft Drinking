@@ -1,0 +1,31 @@
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int n = sc.nextInt();
+int k = sc.nextInt();
+int l = sc.nextInt();
+int c = sc.nextInt();
+int d = sc.nextInt();
+int p = sc.nextInt();
+int nl = sc.nextInt();
+int np = sc.nextInt();
+
+int totl = k*l;
+int tots = c*d;
+
+int drnksplit = totl/n;
+int saltsplit = p/np;
+
+if( drnksplit < saltsplit){
+   int toast = drnksplit/n;
+   System.out.println(toast);
+}
+if( drnksplit > saltsplit){
+   int toast1 = saltsplit/n;
+   System.out.println(toast1);
+}
+
+}
+}
