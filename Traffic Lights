@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		//get input
+		Scanner sc=new Scanner(System.in);
+		String a=sc.nextLine();
+		if(a.equals("red")){
+		    System.out.println("Stop");
+		}else if(a.equals("yellow")){
+		    System.out.println("Get Ready");
+		}else if(a.equals("Green")||a.equals("green")){
+		    System.out.println("Go");
+		}else{
+		    System.out.println("Invalid Input");
+		}
+	}
+}
+	
