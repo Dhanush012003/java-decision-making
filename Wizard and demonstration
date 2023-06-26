@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+
+String input = sc.nextLine();
+String[] list = input.split(" ");
+
+int n = Integer.parseInt(list[0]);
+int x = Integer.parseInt(list[1]);
+int y = Integer.parseInt(list[2]);
+
+if(n > 0 && n <= 10000){
+   if(x > 0 && x <= 10000 && x <= n){
+       if(y > 0 && y <= 10000){
+           int want = n * y / 100;
+           if(x > want){
+               System.out.println(0);
+           }else{
+               System.out.println(want - x);
+           }
+       }
+   }
+}
+}
+}
