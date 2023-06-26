@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		//get input float and int
+		Scanner sc=new Scanner(System.in);
+		float a=sc.nextFloat();
+		float b=sc.nextFloat();
+		String ti=sc.next();
+		String tj=sc.next();
+		//splitting csh into integer i.e 16:00
+		int csh=Integer.parseInt(ti.split(":")[0]);
+		int csm=Integer.parseInt(ti.split(":")[1]);
+		//splitting ch and ct i.e 10:00
+		int ch=Integer.parseInt(tj.split(":")[0]);
+		int cm=Integer.parseInt(tj.split(":")[1]);
+		//converting to minutes 
+		double tt=(a/b)*60;
+		int ttc=(csh-ch)*60+(csm-cm);
+		//if ttc is less than 0 it will invalid
+		if(tt<=0 ||ttc<=00){
+		    System.out.println("Invalid Input");
+		}
+		//tt<ttc then yes
+		else if(tt<=ttc){
+		    System.out.println("Yes");
+		}
+		else{
+		    System.out.println("No");
+		}
+		
+		
+	}
+}
