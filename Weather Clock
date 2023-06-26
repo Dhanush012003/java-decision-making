@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		//your code
+		Scanner sc=new Scanner(System.in);
+		String a=sc.nextLine();
+		if(a.equals("sunny")){
+		    System.out.print("Yes I can drive :)");
+		}
+		else if(a.equals("misty")){
+		    System.out.print("Sorry invalid input :|");
+		}
+		else if(a.equals("rainy")){
+		    System.out.print("No I cant drive :(");
+		}
+	}
+}
