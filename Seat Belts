@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		//getting input
+		Scanner sc=new Scanner(System.in);
+		String a=sc.nextLine();
+		String b=sc.nextLine();
+		String c=sc.nextLine();
+		if(a.equals("yes")&&b.equals("yes")&&c.equals("yes")){
+		    System.out.println("Yes I can drive");
+		}
+		else if(a.equals("no")&&b.equals("no")&&c.equals("no")){
+		    System.out.println("No I can't drive");
+		}
+		else{
+		    System.out.println("Invalid Input");
+		}
+	}
+}
