@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		//get input
+		Scanner sc=new Scanner(System.in);
+		//mileage
+		float m=sc.nextFloat();
+		//normal
+		float o=sc.nextFloat();
+		//ordinary
+		float s=sc.nextFloat();
+		//distance
+		int d=sc.nextInt();
+		//budget
+		float b=sc.nextFloat();
+		if(b%m==0){
+		    System.out.println("Speed");
+		}
+		else{
+		    System.out.println("Ordinary");
+		}
+	}
+}
