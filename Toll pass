@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		//your code
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int o=sc.nextInt();
+		int t=sc.nextInt();
+		int m=sc.nextInt();
+		if(o>t){
+		    System.out.println("Invalid Input");
+		}
+		else if(a==b){
+		    System.out.println("One way pass + Two way pass");
+		}
+		else{
+		    System.out.println("Monthly Pass");
+		}
+	}
+}
