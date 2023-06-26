@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		//get input
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		if(a>100||a<0){
+		   System.out.println("Invalid Input"); 
+		}
+		else if(a%2==0){
+		    int x=a/2;
+		    System.out.print("YES\n"+x+" "+x);
+		}else{
+		    System.out.println("NO");
+		}
+	}
+}
