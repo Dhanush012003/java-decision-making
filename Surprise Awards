@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		//get input
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int a=sc.nextInt();
+		if(a==47||a==744||a==4||a==16||a==774){
+		    System.out.println("YES");
+		}
+		else{
+		    System.out.println("NO");
+		}
+	}
+}
