@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+   Scanner sc = new Scanner(System.in);
+   System.out.println("Enter the number of grown-ups");
+   int grup =sc.nextInt();
+   System.out.println("Enter the number of children");
+   int chi = sc.nextInt();
+   
+   if(grup ==0){
+       System.out.println("Impossible");
+   }
+   else if(grup < chi){
+       int max = grup+(chi-1);
+       System.out.println("Minimum possible bus fare : "+chi);
+       System.out.println("Maximum possible bus fare : "+max);
+   }
+   else if(grup > chi){
+       int max = grup+(chi-1);
+       System.out.println("Minimum possible bus fare : "+grup);
+       System.out.println("Maximum possible bus fare : "+max);
+   }
+}
+}
